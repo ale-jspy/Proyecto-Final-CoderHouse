@@ -1,0 +1,132 @@
+[
+  {
+    "id": "1",
+    "status": true,
+    "title": "Laptop Dell XPS 13",
+    "description": "Portátil ultraligero con pantalla InfinityEdge",
+    "code": "XPS13-001",
+    "price": 1299,
+    "stock": 10,
+    "category": "tecnología",
+    "thumbnails": [
+      "img/dellxps1.jpg"
+    ]
+  },
+  {
+    "id": "2",
+    "status": true,
+    "title": "Camiseta Blanca Clásica",
+    "description": "Camiseta unisex 100% algodón, suave al tacto.",
+    "code": "ROPA001",
+    "price": 12.99,
+    "stock": 50,
+    "category": "ropa",
+    "thumbnails": [
+      "img/camiseta1.jpg"
+    ]
+  },
+  {
+    "id": "3",
+    "status": true,
+    "title": "Lámpara de Escritorio LED",
+    "description": "Lámpara con brazo articulado y luz cálida.",
+    "code": "HOGAR002",
+    "price": 22.5,
+    "stock": 30,
+    "category": "hogar",
+    "thumbnails": [
+      "img/lampara.jpg"
+    ]
+  },
+  {
+    "id": "4",
+    "status": true,
+    "title": "Lámpara de Escritorio LED",
+    "description": "Lámpara con brazo articulado y luz cálida.",
+    "code": "HOGAR002",
+    "price": 22.5,
+    "stock": 30,
+    "category": "hogar",
+    "thumbnails": [
+      "img/lampara.jpg"
+    ]
+  },
+  {
+    "id": "5",
+    "status": true,
+    "title": "Balón de Fútbol FIFA Pro",
+    "description": "Pelota profesional cosida a mano.",
+    "code": "DEP004",
+    "price": 49.99,
+    "stock": 25,
+    "category": "deportes",
+    "thumbnails": [
+      "img/pelota.jpg"
+    ]
+  },
+  {
+    "id": "6",
+    "status": true,
+    "title": "Cien años de soledad",
+    "description": "Obra maestra de Gabriel García Márquez.",
+    "code": "LIB005",
+    "price": 18,
+    "stock": 40,
+    "category": "libros",
+    "thumbnails": [
+      "img/cienanos.jpg"
+    ]
+  },
+  {
+    "id": "7",
+    "status": true,
+    "title": "Shampoo Orgánico de Coco",
+    "description": "Ideal para cuero cabelludo sensible.",
+    "code": "BEAUTY006",
+    "price": 9.9,
+    "stock": 60,
+    "category": "cuidado personal",
+    "thumbnails": [
+      "img/shampoo.jpg"
+    ]
+  },
+  {
+    "id": "8",
+    "status": true,
+    "title": "UNO Clásico",
+    "description": "Juego de cartas para toda la familia.",
+    "code": "JUEGO007",
+    "price": 6.99,
+    "stock": 100,
+    "category": "juguetería",
+    "thumbnails": [
+      "img/uno.jpg"
+    ]
+  },
+  {
+    "id": "9",
+    "status": true,
+    "title": "Galletas de Avena y Pasas",
+    "description": "Snack saludable sin azúcares refinados.",
+    "code": "FOOD010",
+    "price": 3.5,
+    "stock": 80,
+    "category": "alimentos",
+    "thumbnails": [
+      "img/galletas.jpg"
+    ]
+  },
+  {
+    "id": "10",
+    "status": true,
+    "title": "Jabón Artesanal de Lavanda",
+    "description": "Jabón natural hecho a mano con aceites esenciales y aroma relajante.",
+    "code": "BEAUTY011",
+    "price": 4.25,
+    "stock": 45,
+    "category": "cuidado personal",
+    "thumbnails": [
+      "img/jabon-lavanda.jpg"
+    ]
+  }
+]
