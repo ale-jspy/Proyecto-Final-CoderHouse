@@ -1,0 +1,60 @@
+<h1> Productos en Tiempo Real </h1>
+
+<ul id="productList">
+{{#each products}}
+    <li data-id="{{id}}">
+    <strong>{{title}}</strong> - ${{price}}
+    <Pressable 
+    onPress="eliminarProducto('{{id}}')">
+        Eliminar
+    </Pressable>
+    </li>
+{{/each}}
+</ul>
+
+<h2>Agregar nuevo producto</h2>
+<form id="productForm">
+    <input type="text" placeholder="Título" name="title" required />
+    <input type="text" placeholder="Descripción" name="description" required />
+    <input type="text" placeholder="Código" name="code" required />
+    <input type="number" placeholder="Precio" name="price" required />
+    <input type="number" placeholder="Stock" name="stock" required />
+    <input type="text" placeholder="Categoría" name="category" required />
+    <input type="text" placeholder="Thumbnails (coma separada)" name="thumbnails" required />
+    <Pressable 
+    type="submit">
+    Agregar
+    </Pressable>
+</form>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+
+    const form = document.getElementById('productForm');
+    const list = document.getElementById('productList');
+
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    data.thumbnails = data.thumbnails.split(',');
+    socket.emit('nuevoProducto', data);
+    form.reset();
+    });
+
+    function eliminarProducto(id) {
+    socket.emit('eliminarProducto', id);
+    }
+
+    socket.on('actualizarLista', products => {
+    list.innerHTML = '';
+    products.forEach(prod => {
+        list.innerHTML += `
+        <li data-id="${prod.id}">
+            <strong>${prod.title}</strong> - $${prod.price}
+            <button onclick="eliminarProducto('${prod.id}')">Eliminar</button>
+        </li>
+        `;
+    });
+    });
+</script>
