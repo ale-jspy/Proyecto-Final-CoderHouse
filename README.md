@@ -1,36 +1,62 @@
-# Entrega N°2 - Curso Backend CoderHouse -
+# Proyecto Final - CoderHouse (Backend con MongoDB)
 
-Hola Profe!
-
-Este proyecto es una API desarrollada en Node.js con Express, que incluye funcionalidades para gestionar productos y carritos. Además, incorpore lo soslictado que es **WebSockets con Socket.io** y **plantillas con Handlebars** para permitir una vista en tiempo real de los productos.
-Espero le guste.
+Este es el **Proyecto Final** del curso de Backend de CoderHouse.  
+Implementa un servidor con **Node.js**, **Express** y **MongoDB Atlas** que gestiona productos y carritos de compras, con vistas en **Handlebars** y conexión en tiempo real con **Socket.io**.
 
 ---
 
-// Tecnologías utilizadas
+## 📌 Tecnologías utilizadas
 
-- Node.js
-- Express.js
-- File System (persistencia en JSON)
-- Nodemon (modo desarrollo)
-- Express-Handlebars
-- Socket.io
-
-// Lo que se agrego a este proyecto es:
-
-GET /
-
-Renderiza la vista home.handlebars con la lista actual de productos.
-
-GET /realtimeproducts
-
-Renderiza la vista realTimeProducts.handlebars con funcionalidad de WebSockets:
-• Agregar producto (formulario)
-• Eliminar producto
-• Lista se actualiza en tiempo real
+- **Node.js** (Entorno de ejecución)
+- **Express.js** (Framework backend)
+- **MongoDB Atlas** (Base de datos en la nube)
+- **Mongoose** (ODM para MongoDB)
+- **Handlebars** (Motor de plantillas para vistas)
+- **Socket.io** (Actualización en tiempo real)
+- **dotenv** (Manejo de variables de entorno)
+- **Postman** (Pruebas de API)
 
 ---
 
-Desarrollado por Alejandro Gutiérrez.
+## 📂 Estructura del proyecto
 
-//Muchas gracias!!
+├── src
+│ ├── routes # Rutas de API y vistas
+│ ├── managers # Lógica de negocio (ProductManager, CartManager)
+│ ├── models # Modelos de Mongoose (Product, Cart)
+│ ├── views # Vistas Handlebars
+│ ├── data # Archivos JSON de respaldo
+│ ├── db.js # Conexión a MongoDB
+│ └── app.js # Configuración principal del servidor
+├── .env # Variables de entorno (conexión a MongoDB)
+├── package.json # Dependencias y scripts
+└── README.md # Documentación del proyecto
+
+---
+
+## ⚙️ Instalación y configuración
+
+1️⃣ **Clonar el repositorio**
+
+```bash
+git clone git@github.com:ale-jspy/Proyecto-Final-CoderHouse.git
+cd Proyecto-Final-CoderHouse
+
+2️⃣ Instalar dependencias
+npm install
+
+3️⃣ Configurar variables de entorno
+PORT=8080
+MONGO_URI="TU_URI_DE_MONGODB_ATLAS"
+
+4️⃣ Iniciar el servidor
+node src/app.js
+
+Envie las peticiones a:
+http://localhost:8080
+
+
+Autor(Alumno)
+Alejandro Gutiérrez
+Proyecto desarrollado para el curso Backend en CoderHouse.
+```
